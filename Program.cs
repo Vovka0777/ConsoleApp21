@@ -11,12 +11,16 @@ namespace ConsoleApp21
         static void Main(string[] args)
         {
             Calculate calculate1 = new Calculate();
+            calculate1.Info();
             calculate1.line1 = 4;
             calculate1.line2 = 9;
             Console.WriteLine(calculate1.ToString());
+            calculate1.Info();
             Console.WriteLine();
             Calculate calculate2 = new Calculate(5,20);
+            calculate2.Info();
             Console.WriteLine(calculate2.ToString());
+            calculate2.Info();
             Console.WriteLine();
             Console.Write("Первое число = ");
             double line1 = double.Parse(Console.ReadLine());

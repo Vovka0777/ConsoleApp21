@@ -29,8 +29,6 @@ namespace ConsoleApp21
             Calculate calculate3 = new Calculate(line1, line2);
             Console.WriteLine(calculate3.ToString());
             Console.WriteLine();
-
-
         }
     }
 }

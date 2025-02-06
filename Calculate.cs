@@ -15,6 +15,11 @@ namespace ConsoleApp21
         public Calculate(double line1) { this.line1 = line1; }
         public Calculate(double line1, double line2) : this(line1) { this.line2 = line2; }
 
+        public void Info()
+        {
+        Console.WriteLine($"Корень из произведения {line1} * {line2} = {Math.Sqrt(line1*line2):f2}");
+        }
+        
         public override string ToString()
         {
             return $"Корень из произведения {line1} * {line2} = {Math.Sqrt(line1*line2):f2}";
